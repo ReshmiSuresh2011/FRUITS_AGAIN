@@ -1,0 +1,11 @@
+context PurchaseOrder 
+{
+	entity Items 
+	{
+		key PURCHASEORDERID : Integer;
+		AMOUNT : Decimal(15, 2);
+		STATUS : String(20);
+		STATUSAGAIN: String(1);
+	};
+
+};
