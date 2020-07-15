@@ -8,4 +8,11 @@ context PurchaseOrder
 		STATUSAGAIN: String(1);
 	};
  
+     define view ItemView as
+	select from Items
+	{
+		PURCHASEORDERID as "PurchaseOrderItemId",
+		AMOUNT          as "Amount",
+		STATUS			as "Status"
+	};
 };
